@@ -1,0 +1,64 @@
+.three-parts-grid-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 90%; /* Ajusta el ancho al 90% */
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr; /* La columna central tendrá un tamaño fijo */
+    gap: 20px; /* Espacio entre las partes */
+    padding: 20px;
+    justify-items: center; /* Centra el contenido de cada columna */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
+.parte1 {
+    margin-top: 0px;
+}
+
+.part {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Mantiene el contenido al principio sin empujar hacia abajo */
+    text-align: center; /* Centra el texto */
+}
+
+.part h2 {
+    font-size: 5.9vw; /* Ajusta el tamaño para que no ocupe demasiado espacio */
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #333;
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+}
+
+.part .pregunta {
+    font-size: 4vw; /* Ajustar el tamaño para que no ocupe demasiado espacio */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+}
+
+.part p {
+    color: #555;
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 0px; /* Añadir un pequeño espacio entre el h2 y el párrafo */
+}
+
+/* Contenedor del gif */
+.container-gif {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 300px; /* Ajusta la altura al 100% del viewport, o el tamaño que necesites */
+    position: relative; /* Necesario para el posicionamiento del gif */
+}
+
+/* Estilo del gif */
+.gif {
+    width: 500px;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+

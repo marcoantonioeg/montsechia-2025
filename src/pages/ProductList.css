@@ -1,0 +1,27 @@
+.div-bestsellers{
+    width: 100%;
+    background-color: red;
+    }
+    .best-title{
+    font-size: 35pt;
+    
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .best-sellers-container {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+        color: #333;
+        padding: 20px;
+        width: 90%;
+        margin: 0 auto;
+        text-transform: uppercase;
+      }
+      
+      .product-sellers-list {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+      }

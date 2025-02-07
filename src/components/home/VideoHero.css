@@ -1,0 +1,11 @@
+.videoHero{
+height: auto;
+width: 100%;
+}
+.textvideo{
+font-size: 12pt;
+font-style: italic;
+}
+.videoContainer{
+padding-bottom: 60px;
+}

@@ -1,0 +1,23 @@
+.buttonNoFill{
+    font-style: italic;
+text-align: left;
+background-color: none;
+border: 1px solid gray;
+border-radius: 15px;
+padding: 10px;
+width: fit-content;
+color: #555;
+    font-size: 10pt;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+.arrow{
+padding-left: 10px;
+}
+.buttonNoFill:hover{
+    background-color: none !important;
+
+   transform: scale(1.1);
+   transition: all 0.5s;
+}

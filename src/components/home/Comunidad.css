@@ -1,0 +1,70 @@
+/* Contenedor principal */
+.best-sellers-container-comunidad {
+    margin-top: 60px !important;
+    padding-bottom: 60px !important;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Título y subtítulo */
+  .best-title-comunidad {
+    font-size: 35pt;
+  }
+  
+  .subtitle-comunidad {
+    color: #555;
+    font-size: 8pt;
+    font-style: italic;
+    margin: 10px 0;
+  }
+  
+  /* Lista de productos: Usamos Flexbox para una sola fila */
+  .best-sellers-list-comunidad {
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Tarjeta de producto */
+  .product-card-comunidad {
+    flex: 1 1 25%; /* Cada tarjeta ocupa el 25% del ancho */
+    max-width: 25%;
+    padding: 0 10px; /* Espaciado entre elementos */
+    position: relative;
+    box-sizing: border-box; /* Incluye padding en el tamaño del contenedor */
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  
+  /* Elimina margen del primer elemento */
+  .product-card-comunidad.first-comunidad {
+    padding-left: 0;
+  }
+  
+  /* Elimina margen del último elemento */
+  .product-card-comunidad.last-comunidad {
+    padding-right: 0;
+  }
+  
+  /* Imágenes */
+  .product-image-comunidad {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: 100%; /* Permite que las imágenes llenen el contenedor */
+    object-fit: cover; /* Asegura que la proporción se mantenga */
+    transition: transform 0.5s;
+  }
+  
+  /* Efecto hover */
+  .product-card-comunidad:hover .product-image-comunidad {
+    transform: scale(1.1);
+  }
+  

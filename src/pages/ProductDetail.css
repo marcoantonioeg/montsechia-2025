@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la imagen */
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Título y precio */
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Moldura */
+.moldura-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.moldura-options {
+    display: flex;
+    gap: 10px;
+}
+
+.moldura-option {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.moldura-option.selected {
+    background-color: black;
+    color: white;
+}
+
+/* Cantidad */
+.product-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    font-size: 18px;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all 0.2s;
+
+}
+.quantity-btn:hover{
+    color: #000;
+    transition: all 0.2s;
+}
+
+.quantity-value {
+    padding: 0 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Botón Agregar al Carrito */
+.add-to-cart {
+    background-color: transparent;
+    text-align: left;
+    background-color: none;
+    border: 1px solid gray;
+    border-radius: 15px;
+    width: fit-content;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #555;
+        cursor: pointer;
+        transition: all 1s;
+
+font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+.div-quiantity{
+text-align: left;
+background-color: none;
+border: 1px solid gray;
+border-radius: 15px;
+width: fit-content;
+padding-left: 10px;
+padding-right: 10px;
+color: #555;
+    cursor: pointer;
+    transition: all 1s;
+
+}

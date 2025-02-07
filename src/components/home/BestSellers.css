@@ -1,0 +1,64 @@
+.div-bestsellers{
+width: 100%;
+background-color: red;
+}
+.best-title{
+font-size: 35pt;
+
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .best-sellers-container {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    color: #333;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  
+  .best-sellers-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Esto crea una grilla dinámica */
+    gap: 20px;  /* Espacio entre los elementos */
+    width: 100%;
+  }
+  
+  .product-card {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.5s;
+
+  }
+  .product-card:hover .product-image{
+transform: scale(1.1);
+transition: all 0.5s;
+}
+  .product-image {
+    width: 100%;  /* La imagen ocupará todo el ancho disponible */
+    height: auto;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+
+  }
+  
+  .product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    color: #555;
+    font-size: 10pt;
+    font-style: italic;
+  }
+  

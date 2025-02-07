@@ -1,0 +1,110 @@
+.footer {
+    padding: 3rem 0;
+  }
+  
+  .newsletter-title {
+    font-weight: bold;
+    font-size: 3.2vw;
+    text-transform: uppercase;
+  }
+  
+  .newsletter-description {
+    font-size: 10pt;
+    color: #555;
+    font-style: italic;
+  }
+  
+  .newsletter-form {
+    border: 3px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    justify-content: start;
+  }
+  
+  .newsletter-input {
+    font-style: italic;
+    max-width: 300px;
+    border-radius: 0;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 12pt;
+  }
+  
+  .newsletter-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .contact-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 7vw;
+  }
+  
+  .contact-email {
+    font-size: 12pt;
+    font-style: italic;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-end;
+  }
+  
+  .social-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 12pt;
+    margin-right: 1rem;
+    color: #333;
+  }
+  
+  .social-icon:last-child {
+    margin-right: 0;
+  }
+  
+  .social-text {
+    font-size: 12pt;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  footer .brand-name {
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    font-size: 8pt;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
