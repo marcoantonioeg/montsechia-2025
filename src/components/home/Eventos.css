@@ -41,7 +41,7 @@
 
 .part p {
     color: #555;
-    font-size: 8pt;
+    font-size: 10pt;
     text-align: center;
     margin-top: 0px; /* Añadir un pequeño espacio entre el h2 y el párrafo */
 }
@@ -62,3 +62,7 @@
     transition: transform 0.3s ease-in-out; /* Transición suave */
 }
 
+.ml-button{
+    margin-left: 0px !important;
+
+}

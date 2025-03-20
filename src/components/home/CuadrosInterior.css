@@ -22,7 +22,8 @@ width: 200px;
 height: auto;
 position: absolute;
 float: left;
-top: -20px;
+top: -60px;
+left: 30px;
 }
 .btn-comprar{
 position: relative;
@@ -31,4 +32,7 @@ margin: 0 auto;
 }
 .text-cuadro{
     font-size: 12pt;
+}
+.l-h-0{
+    line-height: 0.2 !important;
 }

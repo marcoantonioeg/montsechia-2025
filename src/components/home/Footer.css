@@ -4,14 +4,17 @@
   
   .newsletter-title {
     font-weight: bold;
-    font-size: 3.2vw;
+    font-size: 112px;
     text-transform: uppercase;
+    line-height: 0.6;
   }
   
   .newsletter-description {
-    font-size: 10pt;
+    font-size: 12.5px;
     color: #555;
     font-style: italic;
+    text-align: center;
+    width: 108%;
   }
   
   .newsletter-form {
@@ -21,11 +24,12 @@
     display: flex;
     justify-content: center;
     justify-content: start;
+    width: 105%;
   }
   
   .newsletter-input {
     font-style: italic;
-    max-width: 300px;
+    max-width: 500px;
     border-radius: 0;
     padding: 0.5rem;
     background-color: transparent;
@@ -44,20 +48,27 @@
   
   .contact-title {
     text-align: left;
-    font-weight: bold;
-    font-size: 7vw;
+    font-size: 200px;
+    letter-spacing: 3px;
+    line-height: 0.6;
   }
   
   .contact-email {
-    font-size: 12pt;
+    font-size: 29px;
     font-style: italic;
+    color: #333;
+  }
+  .contact-email:hover{
+    color: #333;
+
   }
   
   .social-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-top: -35px;
   }
   
   .social-icons {
@@ -65,9 +76,13 @@
   }
   
   .social-icon {
-    font-size: 12pt;
+    font-size: 2.5rem !important;
     margin-right: 1rem;
     color: #333;
+  }
+  .social-icon:first-child{
+    font-size: 2.8rem ;
+
   }
   
   .social-icon:last-child {
@@ -75,13 +90,14 @@
   }
   
   .social-text {
-    font-size: 12pt;
+    font-size: 25px;
     font-style: italic;
     font-weight: 500;
+    line-height: 1;
   }
   
   footer .brand-name {
-    font-size: 24pt;
+    font-size: 50px;
     font-weight: bold;
     text-align: left;
   }
@@ -96,15 +112,19 @@
   }
   
   .footer-link {
-    font-size: 8pt;
+    font-size: 14px;
     font-style: italic;
     font-weight: 500;
     margin: 0 1rem;
     text-decoration: none;
     color: #333;
+    transition: all 0.2s;
+
   }
   
   .footer-link:hover {
     text-decoration: underline;
+    color: #000;
+    transition: all 0.2s;
   }
   

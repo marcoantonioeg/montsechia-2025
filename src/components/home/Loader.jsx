@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Loader.css';  // Asegúrate de agregar los estilos
-
+import LoaderImg from '../../../public/images/Isotipo.gif'
 const Loader = () => {
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
@@ -26,7 +26,7 @@ const Loader = () => {
   if (loading) {
     return (
       <div className={`loader-container ${fadeOut ? 'fade-out' : ''}`}>
-        <img src="/images/loader.gif" alt="Cargando..." className="loader" />
+        <img src={LoaderImg} alt="Cargando..." className="loader" />
       </div>
     );
   }

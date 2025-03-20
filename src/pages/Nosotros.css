@@ -1,0 +1,71 @@
+.nosotros-flores{
+    background-image: url(../../public/images/Nosotros_Flores.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: top;
+}
+.nostros-mt{
+margin-top: 200px;
+}
+.flores-futuro{
+height: 70vh;
+margin-top: -200px;
+margin-bottom: 0;
+
+}
+.bg-flores-futuro{
+    float: right;
+    position: absolute;
+    top: -150px;
+    left: -350px;
+}
+.pregunta-flor{
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+.arte{
+height: 70vh;
+margin-top: 22px;
+margin-bottom: 0px;
+
+}
+.florGif{
+    height: 400px;
+    margin-top: -160px;
+}
+.victor{
+    margin-top: -30px;
+    margin-bottom: 0px;
+}
+.victor-img{
+width: 100%;
+}
+.victor-text{
+text-align: center;
+font-style: italic;
+font-size: 14px;
+}
+.tiempo{
+    margin-bottom: 0px;
+
+    margin-top: 0px;
+    height: 600px;
+    background-image: url(/images/Durazno_Nosotros.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position-x: center;
+    background-position-y: bottom;
+    
+
+}
+.tiempo-texto{
+    padding-top: 225px;
+}
+
+.text-futuro{
+    margin-top: -75px;
+}

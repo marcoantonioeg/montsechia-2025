@@ -1,0 +1,65 @@
+/* Estilo general */
+.privacy-policy {
+    font-family: 'Rota', sans-serif;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+  }
+  .privacy-policy > p, ul, li{
+    font-weight: 200;
+
+}
+  /* Listas */
+  .privacy-policy > ul {
+    margin-left: 20px;
+  }
+  
+  .privacy-policy > li {
+    margin-bottom: 5px;
+  }
+  /* Título principal */
+  .extra-light-title {
+    font-weight: 200;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtítulo */
+  .subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin-bottom: 30px;
+    font-weight: 200;
+
+  }
+  
+  /* Enlace del sitio web */
+  .website-link {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Secciones */
+  .section-title {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+
+  
+  /* Enlaces de contacto */
+  .contact-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  

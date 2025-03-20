@@ -6,7 +6,7 @@ const Comunidad = () => {
   return (
     <div className="best-sellers-container-comunidad">
       <center>
-        <h1 className="best-title-comunidad">Comunidad</h1>
+        <h1 className="best-title-comunidad titulo cuadros-mediano l-h-studio-1">Comunidad</h1>
         <p className="subtitle-comunidad">
         Descubre cómo nuestros cuadros cobran vida en los hogares de nuestra comunidad, transformando cada espacio en un rincón lleno de arte y personalidad.        </p>
       </center>

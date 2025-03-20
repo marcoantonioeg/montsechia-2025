@@ -6,9 +6,9 @@ const Paquete = () => {
   return (
     <div className='container'>
         <center>
-            <img className='img-paquete' src={paqueteImg} alt="" srcset="" />
+            <img className='img-paquete' src={paqueteImg} alt="" srcSet="" />
             <br />
-            <ButtonNoFill text="Comprar"/>
+            <ButtonNoFill text="Comprar" direction="tienda"/>
             <br />
             <p className="text-paquete pt-5">
             Conoce nuestros paquetes Montsechia: arte de flores y retratos personalizados hechos en 3D con una experiencia en <br />

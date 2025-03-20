@@ -14,7 +14,7 @@ const VideoHero = () => {
 floral digital que combina el arte contemporáneo con <br />
 la tecnología y decoración.</p>
 <br />
-<ButtonNoFill text="Catálogo"/>
+<ButtonNoFill text="Catálogo" direction="tienda"/>
 </center>
    </div>
   )

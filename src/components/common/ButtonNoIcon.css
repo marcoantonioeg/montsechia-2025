@@ -1,0 +1,27 @@
+.buttonNoIcon{
+   font-style: italic;
+text-align: left;
+background-color: transparent;
+border: 1px solid gray;
+border-radius: 15px;
+padding: 5px 15px;
+width: fit-content;
+color: #555;
+   font-size: 14px;
+   cursor: pointer;
+   transition: all 1s;
+
+}
+.arrow{
+padding-left: 10px;
+}
+.buttonNoFill:hover{
+   background-color: none !important;
+
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.float-left-button{
+   float: left ;
+   margin-left: -30px !important;
+}

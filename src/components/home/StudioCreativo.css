@@ -2,8 +2,8 @@
     width: 90%; /* Ajusta el ancho al 90% */
     display: grid;
     grid-template-columns: 1fr 300px 1fr; /* La columna central tendrá un tamaño fijo */
-    gap: 20px; /* Espacio entre las partes */
-    padding: 20px;
+    gap: 0px; /* Espacio entre las partes */
+    padding: 0px;
     justify-items: center; /* Centra el contenido de cada columna */
     align-items: center; /* Alinea verticalmente el contenido */
 }
@@ -67,4 +67,25 @@ height: 170px;
 }
 .banner-img{
 width: 80%;
+margin-top: -15px !important;
+}
+.l-h-studio{
+line-height: 0.8;
+}
+.l-h-studio-1{
+line-height: 0.9;
+}
+.pr-cel{
+    padding-right: 53px !important;
+}
+.pt-creative{
+padding-top: 70px !important;
+}
+.ml-vida{
+    margin-left: -30px;
+    width: 120% !important;
+}
+.float-left-button{
+    float: left ;
+    margin-left: -30px !important;
 }

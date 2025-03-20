@@ -1,10 +1,24 @@
+@font-face {
+  font-family: 'Rota';
+  src: url('../public/fonts/Rota.otf') format('opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Rota', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Rota', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
+html{
+overflow-x: hidden;
+}
 .App {
   display: flex;
   flex-direction: column;
@@ -14,4 +28,1880 @@ body {
 main {
   flex: 1;
   padding: 20px;
+}
+#root{
+  background-color: #ececec;
+  }
+
+  .titulo{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #333;
+}
+.titulo:hover{
+text-decoration: none !important;
+}
+a:hover{
+text-decoration: none !important;
+}
+.grande{
+font-size: 120px !important;
+line-height: 1;
+}
+.mediano{
+font-size: 60px !important;
+line-height: 1;
+}
+.chico{
+  font-size: 60px !important;
+  line-height: 1;
+}
+.cuadro{
+  font-size: 25px !important;
+  line-height: 1;
+}
+.precio{
+  font-size: 40px !important;
+  line-height: 1;
+}
+.cursor-pointer{
+cursor: pointer;
+}
+.cuadros-mediano{
+font-size: 100px !important
+;
+}
+.cuadros-grande{
+  font-size: 160px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+  .contacto-flor{
+    width: 100% !important;
+    }
+  /* Estilos para móviles */
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 100%;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+.footer .brand-name{
+text-align: center;
+font-size: 30px;
+}
+.contact-title{
+font-size: 50px;
+text-align: center;
+}
+.contact-email{
+font-size: 12px;
+
+}
+.footer-link{
+font-size: 10px;
+}
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+font-size: 10pt;
+padding-top: 15px !important;
+}
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+.mont-m{
+margin-left: 0 !important;
+display: none;
+}
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 15px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionDiv{
+display: none;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: auto !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: none !important;
+  }
+  .cuadros-interior{
+    padding: 0 !important;
+    }
+    .mesa{
+    display: none !important;
+    }
+    .titulo-cuadros-interior{
+    line-height: 1.6 !important;
+    }
+    .btn-comprar{
+    top: 0 !important;
+    }
+    .footer{
+    div{
+    margin-right: 0 !important;
+    }
+
+    }
+    .contacto-div{
+      padding-left: 0 !important;
+      padding-right: 0;
+    }
+    .contacto-mont{
+    padding-right: 0 !important;
+    }
+    .contact-inner{
+    margin-left: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 320px) and (max-width: 374px){
+  .contacto-flor{
+    width: 100% !important;
+    }
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 100%;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+.footer .brand-name{
+text-align: center;
+font-size: 30px;
+}
+.contact-title{
+font-size: 50px;
+text-align: center;
+}
+.contact-email{
+font-size: 12px;
+
+}
+.footer-link{
+font-size: 10px;
+}
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+  font-size: 10pt;
+  padding-top: 15px !important;
+  }
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+.mont-m{
+margin-left: 0 !important;
+display: none;
+}
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 15px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionDiv{
+display: none;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: auto !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: none !important;
+  }
+  .cuadros-interior{
+  padding: 0 !important;
+  }
+  .mesa{
+  display: none !important;
+  }
+  .titulo-cuadros-interior{
+  line-height: 1.6 !important;
+  }
+  .btn-comprar{
+  top: 0 !important;
+  }
+  .footer{
+    div{
+    margin-right: 0 !important;
+    }
+    .contacto-div{
+      padding-left: 0 !important;
+      padding-right: 0;
+    }
+    .contacto-mont{
+    padding-right: 0 !important;
+    }
+    .contact-inner{
+    margin-left: 0;
+    }
+  /* Estilos para tablets en vertical y móviles grandes */
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 375px) and (max-width: 424px){
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 100%;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+.footer .brand-name{
+text-align: center;
+font-size: 30px;
+}
+.contact-title{
+font-size: 50px;
+text-align: center;
+}
+.contact-email{
+font-size: 12px;
+
+}
+.footer-link{
+font-size: 10px;
+}
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+  font-size: 10pt;
+  padding-top: 15px !important;
+  }
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+.mont-m{
+margin-left: 0 !important;
+display: none;
+}
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 15px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionDiv{
+display: none;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: auto !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: none !important;
+  }
+  .cuadros-interior{
+  padding: 0 !important;
+  }
+  .mesa{
+  display: none !important;
+  }
+  .titulo-cuadros-interior{
+  line-height: 1.6 !important;
+  }
+  .btn-comprar{
+  top: 0 !important;
+  }
+  .footer{
+    div{
+    margin-right: 0 !important;
+    }
+   
+  }
+  .contacto-div{
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+  .contacto-mont{
+  padding-right: 0 !important;
+  }
+  .contact-inner{
+  margin-left: 0;
+  }
+  .contacto-flor{
+  width: 100% !important;
+  }
+  /* Estilos para tablets en vertical y móviles grandes */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .mont-m{
+    margin-left: 0 !important;
+    display: none;
+    }
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 100%;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+.footer .brand-name{
+text-align: center;
+font-size: 30px;
+}
+.contact-title{
+font-size: 50px;
+text-align: center;
+}
+.contact-email{
+font-size: 12px;
+
+}
+.footer-link{
+font-size: 10px;
+}
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+  font-size: 10pt;
+  padding-top: 15px !important;
+  }
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionDiv{
+display: none;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: auto !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: none !important;
+  }
+  .cuadros-interior{
+  padding: 0 !important;
+  }
+  .mesa{
+  display: none !important;
+  }
+  .titulo-cuadros-interior{
+  line-height: 1.6 !important;
+  }
+  .btn-comprar{
+  top: 0 !important;
+  }
+  .footer{
+    div{
+    margin-right: 0 !important;
+    }
+   
+  }
+  .contacto-div{
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+  .contacto-mont{
+  padding-right: 0 !important;
+  }
+  .contact-inner{
+  margin-left: 0;
+  }
+  .contacto-flor{
+  width: 100% !important;
+  }
+  /* Estilos para tablets en vertical y móviles grandes */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .footer-m{
+  margin-right: 0 !important;
+  }
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 300px;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+
+.contact-title{
+font-size: 80px;
+}
+.contact-email{
+font-size: 20px;
+
+}
+
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+  font-size: 10pt;
+  padding-top: 15px !important;
+  }
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionImg{
+width: 100% !important;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: 90vh !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: block !important;
+  }
+  .cuadros-interior{
+  padding: 0 !important;
+  }
+  .mesa{
+  display: none !important;
+  }
+  .titulo-cuadros-interior{
+  line-height: 1.6 !important;
+  }
+  .btn-comprar{
+  top: 0 !important;
+  }
+  
+ 
+ 
+  .contacto-flor{
+  width: 100% !important;
+  }
+  .banner-img{
+  width: 50% !important;
+  }
+  .bg-flores-futuro{
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: 50% !important;
+  }
+  /* Estilos para tablets en horizontal */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) and (max-width:1439px) {
+  .footer-m{
+    margin-right: 0 !important;
+    }
+  .cuadros-mediano {
+    font-size: 50px !important;
+}
+.cuadros-grande {
+  font-size: 35px !important;
+}
+.three-parts-grid-section{
+  width: 100% !important;
+display: block;
+}
+.gif{
+width: 300px;
+}
+.part .pregunta{
+text-align: center;
+}
+.float-left-button{
+float: none !important;
+}
+.text-studio{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.banner{
+margin: 0;
+}
+.part{
+padding-top: 0;
+padding-bottom: 0;
+}
+.subtitle-comunidad{
+font-size: 10pt;
+padding-left: 20px;
+padding-right: 20px;
+}
+.newsletter-title{
+font-size: 50px;
+}
+.newsletter-input{
+font-size: 8pt;
+}
+
+.contact-title{
+font-size: 80px;
+}
+.contact-email{
+font-size: 20px;
+
+}
+
+.social-links{
+align-items: center;
+margin-top: 10px;
+}
+.social-icon:first-child{
+font-size: 1rem;
+}
+.social-icon{
+font-size: 1rem;
+}
+.social-text{
+display: none;
+}
+.textvideo{
+  font-size: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.text-paquete{
+font-size: 10pt;
+}
+.text-cuadro{
+  font-size: 10pt;
+  padding-top: 15px !important;
+  }
+.carrito-navbar{
+  padding-right: 15px;
+padding: 0;
+}
+
+.custom-navbar{
+padding-left: 0 !important;
+}
+.navbar-logo{
+padding: 0;
+}
+.cart{
+width: 100%;
+}
+.menu-relative{
+  padding-left: 0 !important;
+}
+.grande{
+font-size: 35px !important;
+}
+.product-sellers-list{
+margin: 0;
+padding: 0;
+}
+.bg-negro {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-cafe {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.bg-blanco {
+  z-index: 999;
+  position: absolute;
+  height: 400px;
+  width: 283px;
+  background-position: center;
+  background-size: contain;
+  top: -28px;
+  left: 0;
+   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+   box-shadow: none;
+  transition: all 0.5s;
+  background-repeat: no-repeat;
+}
+.product-image-detail {
+  max-width: unset;
+  height: 350px;
+  width: 250px;
+  float: left;
+  object-fit: unset;
+}
+.ar-flag {
+  background-color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1000;
+  left: -10px;
+  top: 12px;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 2.5px 10px;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Bebas Neue", serif;
+  -webkit-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+  box-shadow: 0px 25px 15px -10px rgba(51, 51, 51, 1);
+}
+.chico {
+  font-size: 30px !important;
+  line-height: 1;
+}
+.precio {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.moldura-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.cuadro {
+  font-size: 20px !important;
+  line-height: 1;
+}
+.add-to-cart{
+padding-left: 30px;
+padding-right: 30px;
+}
+.composicionDiv{
+display: block;
+}
+.boton-nosotros{
+display: none;
+}
+.nostros-mt{
+margin-top: 100px !important;
+h1{
+font-size: 20px;
+}
+.grande{
+font-size: 60px !important;
+}
+}
+.nosotros-flores{
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  height: 90vh !important;
+}
+.flores-futuro{
+height: auto !important;
+margin-top: -280px !important;
+h2{
+font-size: 35px !important;
+}
+}
+.text-futuro {
+  margin-top: -65px !important;
+  margin-left: -0px !important;
+}
+.victor-text{
+font-size: 12px !important;
+}
+.victor-p-m{
+padding-top: 10px !important;
+margin-top: 0 !important;
+}
+.arte{
+  .grande {
+    font-size: 35px !important;
+}
+
+
+}
+.tiempo-texto {
+  padding-top: 50px !important;
+}
+.tiempo{
+  height: auto !important;
+  background-image: none !important;
+  }
+  .contacto-title{
+  font-size: 90px !important;
+  }
+  .gif-flor-contacto{
+  width: 100% !important;
+  }
+  .m-cuestionario{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  }
+  .title-container{
+    .text1{
+    line-height: 1 !important;
+    }
+
+  }
+  .hoja{
+  display: block !important;
+  }
+  .cuadros-interior{
+  padding: 0 !important;
+  }
+  .mesa{
+  display: none !important;
+  }
+  .titulo-cuadros-interior{
+  line-height: 1.6 !important;
+  }
+  .btn-comprar{
+  top: 0 !important;
+  }
+  
+ 
+ 
+  .contacto-flor{
+  width: 100% !important;
+  }
+  .banner-img{
+  width: 50% !important;
+  }
+  .bg-flores-futuro{
+    position: relative !important;
+    top: unset !important;
+    left: unset !important;
+    width: 50% !important;
+  }
+  /* Estilos para tablets en horizontal */
+}
+
+  /* Estilos para laptops y pantallas pequeñas */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+  /* Estilos para pantallas grandes */
 }

@@ -1,15 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './CancelPage.css'
 const CancelPage = () => {
   return (
-    <div className="container mt-5">
-      <h2>Pago Cancelado</h2>
-      <p>Tu pago no se completó.</p>
-      <Link to="/" className="btn btn-primary">
-        Volver a la Tienda
+    <>
+     <div className="checkout-container">
+      <h1 className='titulo text-center titulo-cancelado'>Pago Cancelado</h1>
+      <h3 className="checkout-total text-center">
+      <p className='titulo titulo-no-completado'>Tu pedido no se completó.</p>
+      </h3>
+
+     
+      <Link to="/" >
+      <button className="checkout-button">
+        Volver al inicio
+      </button>
       </Link>
+     
     </div>
+   
+    </>
   );
 };
 

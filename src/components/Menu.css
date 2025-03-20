@@ -1,0 +1,47 @@
+.float-right{
+   align-items: end !important;
+   justify-content: end !important;
+}
+
+.cerrar-menu{
+cursor: pointer;
+}
+.no-border-bottom{
+   
+border-bottom: none !important;
+transition: all 0.4s;
+
+}
+.no-border-bottom:hover{
+transform: scale(1.1);
+transition: all 0.4s;
+}
+.floating-right{
+float: right;
+}
+.titulo-menu{
+   font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+   color: gray ;
+font-size: 60px;
+transition: all 0.4s;
+
+}
+.titulo-menu:hover{
+   color: #333333;
+   transition: all 0.4s;
+
+
+}
+.brand-menu{
+position: fixed;
+bottom: 0;
+font-size: 25px;
+max-width: 310px;
+width: 100%;
+}
+.brand-menu p{
+   text-align: center;
+}

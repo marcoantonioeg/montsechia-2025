@@ -11,8 +11,11 @@
   --primary-background: #eee;
   --nav-height: 60px;
 }
+#root{
+background-color: #ececec;
+}
 body {
-  background-color: #ededec;
+  background-color: #ececec;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;

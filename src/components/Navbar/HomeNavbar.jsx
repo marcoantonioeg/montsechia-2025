@@ -11,7 +11,7 @@ const HomeNavbar = () => {
                 <div className='flex'>
                    
                     <div className='tiktok'>
-                    <img src={Tiktok} alt="" className='social-icon' srcset="" />
+                    <img src={Tiktok} alt="" className='social-icon' srcSet="" />
                     </div>
                     
                 </div>
