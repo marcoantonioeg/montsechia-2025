@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import BestSellers from '../components/home/BestSellers';
 import './ProductDetail.css';
@@ -9,9 +9,10 @@ import molduraBlanca from '../../public/images/Moldura_Blanca.png';
 import Composicion from '../components/Composicion';
 import { CartContext } from '../context/CartContext';
 import ButtonNoFillLeft from '../components/common/ButtonNoFillLeft';
-import confetti from 'canvas-confetti';  // Importamos canvas-confetti
+import confetti from 'canvas-confetti';
 
 const ProductDetail = () => {
+  const navigate = useNavigate(); // Añade esto dentro del componente
   const { addToCart } = useContext(CartContext);
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -22,6 +23,17 @@ const ProductDetail = () => {
   const [error, setError] = useState('');
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
   const [isShippingVisible, setIsShippingVisible] = useState(false);
+
+  // IDs de productos que deben mostrar el botón de paquete
+  const paqueteProductIds = [
+    "prod_RooAZXx63jRw1N", 
+    "prod_RooAbpaUYb5S9s", 
+    "prod_RooAPMQP4pUI42", 
+    "prod_Roo9OFDZ2IhrGR"
+  ];
+
+  // Determinar si el producto actual es un paquete
+  const isPaquete = paqueteProductIds.includes(id);
 
   const toggleDescription = () => setIsDescriptionVisible(!isDescriptionVisible);
   const toggleShipping = () => setIsShippingVisible(!isShippingVisible);
@@ -53,7 +65,6 @@ const ProductDetail = () => {
 
   const productImage = product.images[0] || '/images/default.png';
 
-  // Función para lanzar el confeti al hacer clic en el botón
   const triggerConfetti = () => {
     confetti({
       particleCount: 100,
@@ -105,53 +116,83 @@ const ProductDetail = () => {
                     className={`moldura-option ${selectedMoldura === moldura ? 'selected' : ''}`}
                     style={{ backgroundImage: `url(${moldura})` }}
                     onClick={() => setSelectedMoldura(moldura)}
-                  >
-                    {console.log(selectedMoldura)}
-                  </div>
+                  />
                 ))}
               </div>
             </div>
+{/* Botón normal - visible solo si NO es paquete Y NO es el producto de retrato */}
+{!isPaquete && id !== "prod_RooAotE1MdTfou" && (
+  <button
+    id='button-normal'
+    className="add-to-cart titulo cuadro"
+    onClick={() => {
+      addToCart({
+        ...product,
+        price: parseFloat(product.metadata.precio),
+        quantity: quantity,
+        molduraNota: selectedMoldura === molduraNegra
+          ? 'Moldura Negra'
+          : selectedMoldura === molduraCafe
+          ? 'Moldura Café'
+          : 'Moldura Blanca'
+      });
+      triggerConfetti();
+    }}
+  >
+    AGREGAR AL CARRITO - {new Intl.NumberFormat('es-MX', {
+      style: 'currency',
+      currency: 'MXN'
+    }).format(totalPrice)} MXN
+  </button>
+)}
 
-            <label className="moldura-label titulo cuadro">CANTIDAD</label>
-            <div className="product-quantity mb-3">
-              <div className="div-quantity">
-                <button
-                  className="quantity-btn"
-                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                >
-                  -
-                </button>
-                <span className="quantity-value">{quantity}</span>
-                <button
-                  className="quantity-btn"
-                  onClick={() => setQuantity(quantity + 1)}
-                >
-                  +
-                </button>
-              </div>
-            </div>
+{/* Botón paquete - visible solo si ES paquete */}
+{isPaquete && (
+  <button
+    id='button-paquete'
+    className="add-to-cart titulo cuadro"
+    onClick={() => {
+      addToCart({
+        ...product,
+        price: parseFloat(product.metadata.precio),
+        quantity: quantity,
+        molduraNota: selectedMoldura === molduraNegra
+          ? 'Moldura Negra'
+          : selectedMoldura === molduraCafe
+          ? 'Moldura Café'
+          : 'Moldura Blanca'
+      });
+      triggerConfetti();
+      navigate('/postal');
+    }}
+  >
+    PERSONALIZAR PAQUETE
+  </button>
+)}
 
-            <button
-              className="add-to-cart titulo cuadro"
-              onClick={() => {
-                addToCart({
-                  ...product,
-                  price: parseFloat(product.metadata.precio),
-                  quantity: quantity,
-                  molduraNota: selectedMoldura === molduraNegra
-                    ? 'Moldura Negra'
-                    : selectedMoldura === molduraCafe
-                    ? 'Moldura Café'
-                    : 'Moldura Blanca'
-                });
-                triggerConfetti();  // Llamamos a la función de confeti
-              }}
-            >
-              AGREGAR AL CARRITO - {new Intl.NumberFormat('es-MX', {
-                style: 'currency',
-                currency: 'MXN'
-              }).format(totalPrice)} MXN
-            </button>
+{/* Botón retrato - visible solo si el ID es prod_RooAotE1MdTfou */}
+{id === "prod_RooAotE1MdTfou" && (
+  <button
+    id='button-retrato'
+    className="add-to-cart titulo cuadro"
+    onClick={() => {
+      addToCart({
+        ...product,
+        price: parseFloat(product.metadata.precio),
+        quantity: quantity,
+        molduraNota: selectedMoldura === molduraNegra
+          ? 'Moldura Negra'
+          : selectedMoldura === molduraCafe
+          ? 'Moldura Café'
+          : 'Moldura Blanca'
+      });
+      triggerConfetti();
+      navigate('/postal-enmarcar');
+    }}
+  >
+    PERSONALIZAR RETRATO
+  </button>
+)}
             <div className='mt-4'>
               <p
                 id="productDescriptionTrigger"
@@ -175,18 +216,16 @@ const ProductDetail = () => {
                     <p className='product-detail-content mb-1'>Envío 1 a 3 días hábiles.</p>
                   </li>
                   <li>
-                    <p className='product-detail-content mb-1'>Los pedidos de nuestra sección de “Interior” se enviarán los lunes de cada semana.</p>
+                    <p className='product-detail-content mb-1'>Los pedidos de nuestra sección de "Interior" se enviarán los lunes de cada semana.</p>
                   </li>
                   <li>
                     <p className='product-detail-content mb-1'>Se aceptan envíos urgentes con un costo extra de $100 MXN. </p>
                   </li>
                   <li>
-                    <p className='product-detail-content mb-1'>El costo de envío es gratuito a todo México.
-                    </p>
+                    <p className='product-detail-content mb-1'>El costo de envío es gratuito a todo México.</p>
                   </li>
                   <li>
-                    <p className='product-detail-content'>Los pedidos realizados durante el fin de semana se enviarán en un plazo de dos lunes.
-                    </p>
+                    <p className='product-detail-content'>Los pedidos realizados durante el fin de semana se enviarán en un plazo de dos lunes.</p>
                   </li>
                 </ul>
               </p>

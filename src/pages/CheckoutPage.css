@@ -21,8 +21,8 @@
  
  /* Imagen del producto */
  .checkout-img {
-   width: 40px;
-   height: 40px;
+   width: 60px;
+   height: 60px;
    object-fit: cover;
    border-radius: 4px;
    margin-right: 15px;
@@ -43,13 +43,23 @@
  .checkout-price {
    font-weight: bold;
  }
- .checkout-moldura{
-font-style: italic;
+ .checkout-note{
+font-style: normal;
 font-size: 12px;
 font-weight: bold;
 
 }
- 
+.checkout-note-desc{
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 100;
+  
+  }
+ .checkout-img-postal{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
  /* Botón de eliminar */
  .remove-button {
    background: none;

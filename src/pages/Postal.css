@@ -1,0 +1,35 @@
+.postal-title{
+font-size: 50px;
+}
+.header-postal{
+display: flex;
+align-items: center;
+}
+.button-regresar{
+float: left;
+cursor: pointer;
+background-color: transparent;
+padding: 5px 20px;
+font-style: italic;
+border: 1px solid gray;
+border-radius: 20px;
+font-weight: 100;
+transition: all 0.3s;
+color: #333333;
+}
+.button-regresar:hover, .button-siguiente:hover{
+transform: scale(1.05);
+}
+.button-siguiente{
+   float: right;
+   cursor: pointer;
+background-color: transparent;
+padding: 5px 20px;
+font-style: italic;
+border: 1px solid gray;
+border-radius: 20px;
+font-weight: 100;
+transition: all 0.3s;
+color: #333333;
+   }
+   

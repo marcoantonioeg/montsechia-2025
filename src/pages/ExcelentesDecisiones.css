@@ -1,0 +1,9 @@
+.shopping-div{
+display: flex;
+justify-content: center;
+}
+.carrito-final{
+color: #333333;
+font-size: 50px;
+margin-bottom: 40px;
+}

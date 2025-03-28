@@ -1,0 +1,17 @@
+.div-area-nota{
+display: flex;
+align-content: center;
+}
+#textarea-nota{
+width: 100%;
+border-radius: 20px;
+border: none;
+padding: 20px;
+resize: none;
+font-size: 14px;
+color: #333333;
+font-style: italic;
+border: 1px solid gray;
+background-color: transparent;
+height: 200px;
+}

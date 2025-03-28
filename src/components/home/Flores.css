@@ -1,0 +1,117 @@
+.flor-img {
+   object-fit: contain;
+   width: 100%;
+   max-width: 100%;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+ 
+ .flor-img:hover {
+   transform: scale(1.05);
+ }
+ 
+ .primera-linea {
+   float: right;
+ }
+ 
+ /* Filtros de color */
+ .rojo, .morado, .rosa, .naranja,
+ .amarillo, .verde, .blanco, .gris,
+ #select1, #select2, #select3, #select4 {
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+   border-radius: 100%;
+   margin-bottom: 15px;
+   transition: all 0.3s;
+ }
+ 
+ .rojo, #select1.rojo, #select2.rojo, #select3.rojo, #select4.rojo { 
+   background-color: #d30100; 
+ }
+ 
+ .morado, #select1.morado, #select2.morado, #select3.morado, #select4.morado { 
+   background-color: #9c399b; 
+ }
+ 
+ .rosa, #select1.rosa, #select2.rosa, #select3.rosa, #select4.rosa { 
+   background-color: #e45d80; 
+ }
+ 
+ .naranja, #select1.naranja, #select2.naranja, #select3.naranja, #select4.naranja { 
+   background-color: #ff931e; 
+ }
+ 
+ .amarillo, #select1.amarillo, #select2.amarillo, #select3.amarillo, #select4.amarillo { 
+   background-color: #f6c83c; 
+ }
+ 
+ .verde, #select1.verde, #select2.verde, #select3.verde, #select4.verde { 
+   background-color: #babc34; 
+ }
+ 
+ .blanco, #select1.blanco, #select2.blanco, #select3.blanco, #select4.blanco { 
+   background-color: #fff;
+   border: 1px solid #ccc;
+ }
+ 
+ .gris, #select1.gris, #select2.gris, #select3.gris, #select4.gris { 
+   background-color: gray; 
+ }
+ 
+ /* Filtro activo */
+ .active-filter {
+   border: 3px solid #000 !important;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   transform: scale(1.1);
+ }
+ 
+
+ 
+ /* Indicador de selección */
+ .selection-indicator {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: #fff;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   color: #000;
+   border: 2px solid #000;
+   font-size: 14px;
+ }
+ 
+ /* Contador de selecciones */
+ .selection-counter {
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #333;
+ }
+ 
+ /* Botón */
+ .flor-to-cart {
+   background-color: #333333;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: all 0.3s;
+ }
+ 
+ .flor-to-cart:hover {
+   background-color: #333333;
+   transform: scale(1.05);
+ }
+ 
+ .flor-to-cart:disabled {
+   background-color: #ccc;
+   cursor: not-allowed;
+   transform: none;
+ }

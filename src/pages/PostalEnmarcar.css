@@ -1,0 +1,11 @@
+.span-enmarcar{
+text-transform: uppercase;
+text-align: center;
+color: #fff;
+background-color: gray;
+padding: 5px 10px;
+width: 100%;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+}
